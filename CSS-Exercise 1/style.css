@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    background-color: darkgray;
+}
+.p1{
+    background-color:  #FDFBD4;
+}
+.p2{
+    color: blue;
+    background-color: rgb(255, 118, 118);
+}
+.p3{
+    color: purple;
+    background-color: rgb(148, 168, 148);
+}
+.p4{
+    color:red;
+    background-color: aqua;
+}
+.p5{
+    color: green;
+    background-color: pink;
+}
