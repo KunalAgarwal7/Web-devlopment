@@ -1,0 +1,53 @@
+.body {
+    background-color: grey;
+    padding: 40px 310px;
+}
+
+.div {
+    background-color: white;
+    height: 310px;
+    width: 200px;
+    border-radius: 7px;
+}
+
+.image {
+    border-radius: 7px;
+    margin: 2px;
+    border: 1px solid rgb(172, 164, 164);
+}
+.Nature{
+    border-radius: 30px;
+    border:1px solid grey;
+    background-color: white;
+    font-size: 8px;
+    margin: 0 0 0 8px;
+}
+.Nature1{
+    border-radius: 30px;
+    border:1px solid grey;
+    background-color: white;
+    font-size: 8px;
+}
+
+h3 {
+    font-weight: 500;
+    margin:10px 0 10px 5px;
+    font-family: 'Poppins', sans-serif;
+}
+.content{
+    font-size: 9px;
+    font-family: 'Poppins', sans-serif;
+    color: grey;
+    padding: 0 0 0 4px;
+}
+
+.button2{
+    margin: 25px 70px;
+    border-radius: 20px;
+    font-size: 8px;
+    border: 1px solid;
+    color: rgb(40, 102, 129);
+    padding: 5px;
+    background-color: rgb(238, 251, 255);
+    font-family: cursive;
+}
