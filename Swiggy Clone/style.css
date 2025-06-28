@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+  background-color: rgb(248, 89, 32);
+  height: 110vh;
+  width: 100%;
+  position: static;
+  margin: auto;
+  overflow: auto;
+}
+header {
+  height: 80px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.corporate {
+  text-decoration: none;
+  color: white;
+}
+.Partner {
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  margin: 5px;
+  align-self: start;
+}
+.gettheapp {
+  height: 54px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  background: transparent;
+}
+.Signin {
+  background: #000;
+  border-radius: 16px;
+  color: white;
+  height: 54px;
+  padding: 12px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.sushi {
+  position: absolute;
+  right: 0px;
+  height: 450px;
+  width: 250px;
+}
+.veggies {
+  position: absolute;
+  left: 0;
+  height: 450px;
+  width: 250px;
+}
+.content {
+  position: relative;
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+  font-weight: 600;
+  margin: 0px auto;
+  padding-left: 12px;
+  width: 60%;
+  line-height: 56px;
+  letter-spacing: -0.3px;
+  margin-top: 60px;
+}
+
+.svg {
+  transform: rotate(-30deg);
+  text-align: center;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+#loc {
+  position: relative;
+  border-radius: 16px;
+  background-color: #fff;
+  height: 55px;
+  width: 280px;
+  border: 1.5px solid rgba(2, 6, 12, 0.15);
+}
+#item {
+  position: relative;
+  border-radius: 16px;
+  background-color: #fff;
+  height: 55px;
+  width: 420px;
+  border: 1.5px solid rgba(2, 6, 12, 0.15);
+}
+.threeimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.m:hover {
+  width: 420px;
+  height: 390px;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.4s;
+}
+.menuphoto {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+.menuphotodsn {
+  width: 144px;
+  height: 180px;
+}
+.menuphotodsn:hover {
+  width: 164px;
+  height: 200px;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.4s;
+}
+.heading {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 40px 0 0 40px;
+}
+
+.instamart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 40px;
+}
+.martimg {
+  width: 144px;
+  height: 180px;
+}
+.QR {
+  width: 100%;
+  height: 40vh;
+  margin-top: 80px;
+}
+.citybtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.cities {
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1.5px solid rgba(2, 6, 12, 0.15);
+  border-radius: 12px;
+  height: auto;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 15px;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+.footer {
+  background-color: rgb(240, 240, 245);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+}
+.company{
+  display: grid;
+  grid-template-columns: 1fr  ;
+}
+.contactus{
+  display: grid;
+  grid-template-columns: 1fr ;
+}
+.legal{
+  display: grid;
+  grid-template-columns: 1fr ;
+}
+.sociallinks{
+  display: grid;
+  grid-template-columns: 1fr ;
+}
+.foot {
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.4px;
+  color: rgba(2, 6, 12, 0.6);
+}
+@media only screen and (max-width: 1250px) {
+  .sushi {
+    height: 0px;
+    width: 0px;
+  }
+  .veggies {
+    height: 0px;
+    width: 0px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .gettheapp {
+    height: 24px;
+    padding: 2px 6px;
+    font-size: 10px;
+  }
+  .Signin {
+    height: 24px;
+    padding: 2px 6px;
+    font-size: 10px;
+  }
+  .corporate {
+    font-size: 10px;
+  }
+  .Partner {
+    font-size: 10px;
+  }
+  .nav {
+    gap: 20px;
+  }
+}
