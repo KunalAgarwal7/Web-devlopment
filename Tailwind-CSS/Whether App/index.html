@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whether App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-700">
+
+    <!--Main-->
+    <div class="flex justify-center items-center h-[100vh]">
+
+        <!--First box-->
+      <div class="h-[65vh] w-[25vw] bg-sky-400 rounded-3xl">
+
+        <!--Content-->
+        <div class="flex flex-col">
+
+            <!--Top content-->
+        <div class="p-5 h-[40vh]">
+          <div class="font-sans font-medium text-white text-3xl">Tuesday</div>
+          <div class="font-sans font-medium text-white mt-1">
+            21-july-2025
+          </div>
+          <br>
+          <div>
+            <i class="fa-solid fa-location-dot text-white"></i>
+            <span class="font-sans font-medium text-white "">Jaipur,Raj</span>
+          </div>
+        </div>
+
+        <!--Bottom content-->
+        <div class="p-5 h-[20vh]">
+          <div><i class="fa-regular fa-sun text-white text-5xl"></i></div>
+          <div class="font-sans font-medium text-white text-3xl mt-2">29<sup>o</sup>C</div>
+          <div class="font-sans font-medium text-white text-xl">Sunny</div>
+        </div>
+        </div>
+      </div>
+
+      <!--Second box-->
+      <div class="h-[60vh] w-[25vw] bg-slate-900 rounded-3xl">
+
+        <!--Top Data-->
+        <div class="p-5 h-[25vh]">
+            <div class="flex justify-between">
+                <div class="font-sans font-medium text-white text-xl">PRECIPITATION</div>
+                <div class="font-sans font-medium text-white text-xl">0%</div>
+            </div>
+            <div class="flex justify-between">
+                <div class="font-sans font-medium text-white text-xl">HUMIDITY</div>
+                <div class="font-sans font-medium text-white text-xl">42%</div>
+            </div>
+            <div class="flex justify-between">
+                <div class="font-sans font-medium text-white text-xl">WIND</div>
+                <div class="font-sans font-medium text-white text-xl">3km/h</div>
+            </div>
+        </div>
+
+        <!--Days Whether-->
+        <div class="flex justify-center h-[25vh]">
+            <div class="h-[15vh] bg-slate-800 w-[5vw] rounded-md">
+                <div class="text-center text-white text-4xl"><i class="fa-regular fa-sun"></i></div>
+                <div class="font-sans font-medium text-white mt-1 text-center">Tue</div>
+                <div class="font-sans font-medium text-white mt-1 text-center">30<sup>o</sup>C</div>
+            </div>
+            <div class="h-[15vh] bg-slate-800 w-[5vw] rounded-md">
+                <div class="text-center text-white text-4xl"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+                <div class="font-sans font-medium text-white mt-1 text-center">Wed</div>
+                <div class="font-sans font-medium text-white mt-1 text-center">22<sup>o</sup>C</div>
+            </div>
+            <div class="h-[15vh] bg-slate-800 w-[5vw] rounded-md">
+                <div class="text-center text-white text-4xl"><i class="fa-solid fa-cloud-moon-rain"></i></div>
+                <div class="font-sans font-medium text-white mt-1 text-center">Thu</div>
+                <div class="font-sans font-medium text-white mt-1 text-center">06<sup>o</sup>C</div>
+            </div>
+            <div class="h-[15vh] bg-slate-800 w-[5vw] rounded-md">
+                <div class="text-center text-white text-4xl"><i class="fa-regular fa-sun"></i></div>
+                <div class="font-sans font-medium text-white mt-1 text-center">Fry</div>
+                <div class="font-sans font-medium text-white mt-1 text-center">26<sup>o</sup>C</div>
+            </div>
+        </div>
+
+        <!--Last button-->
+        <div class="flex justify-center">
+            <button class="bg-sky-600 rounded-md w-[20vw] p-2">
+                 <i class="fa-solid fa-location-dot text-white"></i>
+                             <span class="font-sans font-medium text-white ml-1">Current location</span>
+
+            </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
