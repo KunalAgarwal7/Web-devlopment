@@ -4,7 +4,7 @@ using namespace std;
 string Primenumber(int &n){
     int i = 2;
     bool a = false;
-    while(i*i<n){
+    while(i*i<=n){
         if(n%i==0){
             cout<<"Not a prime number";
             a = true;
