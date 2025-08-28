@@ -22,4 +22,5 @@ This project replicates the layout and design of VS Code to practice modern UI d
 
 ## Screenshot
 
+<img width="1920" height="1080" alt="Screenshot (15)" src="https://github.com/user-attachments/assets/87258c34-dd15-49dd-9de9-ec61129bb6af" />
 
