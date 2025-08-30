@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    /* styles.css or inside <style> block */
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  </style>
+  <body class="bg-black">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--Header-->
+    <div class="flex items-center h-[10vh] w-[95vw]">
+      <div class="w-[5vw] flex justify-center pl-5">
+        <i class="fa-brands fa-spotify text-white text-3xl"></i>
+      </div>
+      <div class="flex flex-row justify-end w-[55vw] gap-2">
+        <div class="bg-zinc-800 rounded-full h-10 w-10 hidden md:block">
+          <i class="fa-solid fa-house text-white text-2xl pl-2 pt-1.5"></i>
+        </div>
+        <div
+          class="bg-zinc-800 w-75 h-10 rounded-full text-white pl-2 flex items-center hidden md:block"
+        >
+          <i class="fa-solid fa-magnifying-glass text-white mr-2"></i>
+          What do you want to play ?
+          <i class="fa-brands fa-firefox text-white pl-10 text-md"></i>
+        </div>
+      </div>
+      <div class="flex flex-row justify-end w-[40vw]">
+        <div class="flex gap-2">
+          <div class="bg-white w-35 h-7 rounded-full hidden lg:block">
+            <span class="flex justify-center"> Explore Premium </span>
+          </div>
+          <div class="bg-black w-35 h-7 rounded-full hidden lg:block">
+            <i class="fa-solid fa-download text-white"></i>
+            <span class="text-white"> Install App </span>
+          </div>
+        </div>
+        <div class="flex justify-center gap-2">
+          <div>
+            <i class="fa-regular fa-bell text-white"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-user-group text-white"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-id-card-clip text-white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Body-->
+    <div class="flex justify-evenly">
+      <!--Body Library Div-->
+      <div
+        class="h-[80vh] hidden md:block md:w-[21vw] w-[0vw] bg-zinc-900 rounded-md"
+      >
+        <!--Your Library-->
+        <div class="flex h-[8vh] justify-between items-center">
+          <div class="text-white font-bold pl-4 text-md">Your Library</div>
+          <div class="flex gap-4 pr-7">
+            <div
+              class="bg-zinc-800 rounded-full w-8 h-8 flex justify-center items-center"
+            >
+              <i class="fa-solid fa-plus text-white"></i>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-up-right-and-down-left-from-center text-white text-sm"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <!--Two Options-->
+        <div class="flex gap-4 pl-3 h-[4vh]">
+          <div class="bg-zinc-800 rounded-full w-20 h-8">
+            <span class="text-white text-sm font-bold p-3.5"> Playlists </span>
+          </div>
+          <div class="bg-zinc-800 rounded-full w-18 h-8">
+            <span class="text-white text-sm font-bold p-3.5"> Artists </span>
+          </div>
+        </div>
+
+        <!--Recents-->
+        <div class="flex h-[8vh] justify-between items-center">
+          <div class="text-zinc-500 font-bold pl-4 text-md">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="flex gap-2 pr-7">
+            <div class="text-zinc-500 text-md">Recents</div>
+            <div>
+              <i class="fa-solid fa-list text-sm text-zinc-500"></i>
+            </div>
+          </div>
+        </div>
+
+        <!--Playlists-->
+        <div class="flex gap-4 items-center h-[8vh]">
+          <div class="pl-3">
+            <img
+              src="assets/playlist/playlist1.png"
+              alt=""
+              class="h-11 w-11 rounded-md"
+            />
+          </div>
+          <div>
+            <div class="text-white font-bold text-md">Liked Songs</div>
+            <div class="text-zinc-400">Playlist.4 songs</div>
+          </div>
+        </div>
+        <div class="flex gap-4 items-center h-[8vh]">
+          <div class="pl-3">
+            <img
+              src="assets/playlist/playlist2.png"
+              alt=""
+              class="h-11 w-11 rounded-md"
+            />
+          </div>
+          <div>
+            <div class="text-white font-bold text-md">N</div>
+            <div class="text-zinc-400">Playlist.mr kunal</div>
+          </div>
+        </div>
+        <div class="flex gap-4 items-center h-[8vh]">
+          <div class="pl-3">
+            <img
+              src="assets/playlist/playlist3.png"
+              alt=""
+              class="h-11 w-11 rounded-md"
+            />
+          </div>
+          <div>
+            <div class="text-white font-bold text-md">Rn</div>
+            <div class="text-zinc-400">Playlist.mr kunal</div>
+          </div>
+        </div>
+        <div class="flex gap-4 items-center h-[8vh]">
+          <div class="pl-3">
+            <img
+              src="assets/playlist/playlist4.png"
+              alt=""
+              class="h-11 w-11 rounded-md"
+            />
+          </div>
+          <div>
+            <div class="text-white font-bold text-md">Nooran Sisters</div>
+            <div class="text-zinc-400">Artists</div>
+          </div>
+        </div>
+      </div>
+
+      <!--Body Music Div-->
+      <div
+        class="h-[80vh] hide-scrollbar overflow-x-auto w-[100vw] md:w-[55vw] w-[76vw] bg-zinc-900 rounded-md"
+      >
+        <!--Three options-->
+        <div
+          class="flex h-[10vh] items-center gap-1 justify-start w-[55vw] pl-5"
+        >
+          <div class="bg-zinc-700 rounded-full w-11 h-8">
+            <span class="text-white text-sm font-bold p-3.5"> All </span>
+          </div>
+          <div class="bg-white rounded-full w-14.5 h-8">
+            <span class="text-black text-sm font-bold p-2.5"> Music </span>
+          </div>
+          <div class="bg-zinc-700 rounded-full w-21 h-8">
+            <span class="text-white text-sm font-bold p-3.5"> Podcasts </span>
+          </div>
+        </div>
+
+        <!--Main music-->
+        <div class="gap-4">
+          <!--First row-->
+          <div class="flex justify-between p-7 h-[5vh] mb-3 cursor-pointer">
+            <div class="text-white text-2xl font-bold">
+              Today's biggest hits
+            </div>
+            <div class="text-zinc-400 font-bold">Show all</div>
+          </div>
+          <!--Scrollable container-->
+          <div class="overflow-x-auto hide-scrollbar h-[26vh] cursor-pointer">
+            <div class="flex space-x-4 px-4">
+              <!-- Card 1 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <!-- Image -->
+                <img
+                  src="assets/Singer/marron 5.jpg"
+                  alt="Maroon 5"
+                  class="rounded-xl w-40 h-40"
+                />
+
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+
+                <!-- Text below the image -->
+                <div class="text-zinc-400 font-bold">Maroon 5</div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/pritam.jpeg"
+                  alt="Pritam"
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">Pritam</div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/shankar.jpeg"
+                  alt="Shankar Ehsaan Loy"
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">Shankar Ehsaan Loy</div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/sidhu.jpg"
+                  alt="Sidhu Moosewala"
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">Sidhu Moosewala</div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/vishal mishra.jpeg"
+                  alt="Vishal Mishra"
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">Vishal Mishra</div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/weekend.jpeg"
+                  alt="Weekend"
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">Weekend</div>
+              </div>
+            </div>
+          </div>
+
+          <!--Second row-->
+          <div class="flex justify-between p-7 h-[5vh] mb-3 cursor-pointer">
+            <div class="text-white text-2xl font-bold">Singers</div>
+            <div class="text-zinc-400 font-bold">Show all</div>
+          </div>
+          <!-- Scrollable container -->
+          <div class="overflow-x-auto hide-scrollbar h-[26vh] cursor-pointer">
+            <!-- Flex row for horizontal layout -->
+            <div class="flex space-x-4 px-4">
+              <!-- Card 1 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/arjit singh.jpg"
+                  alt=""
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">Arjit Singh</div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/atif aslam.jpeg"
+                  alt=""
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">Atif Aslam</div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/faheem.jpeg"
+                  alt=""
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">Faheem Abdullah</div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/jony.jpeg"
+                  alt=""
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">Jony</div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/justin.jpg"
+                  alt=""
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">Justin Bieber</div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/king.jpeg"
+                  alt=""
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">King</div>
+              </div>
+            </div>
+          </div>
+
+          <!--Third row-->
+          <div class="flex justify-between p-7 h-[5vh] mb-3 cursor-pointer">
+            <div class="text-white text-2xl font-bold">Party</div>
+            <div class="text-zinc-400 font-bold">Show all</div>
+          </div>
+          <!-- Scrollable container -->
+          <div class="overflow-x-auto hide-scrollbar h-[26vh] cursor-pointer">
+            <!-- Flex layout for horizontal scrolling -->
+            <div class="flex space-x-4 px-4">
+              <!-- Card 1 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/One thousand miles.jpg"
+                  alt=""
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">One Thousand Miles</div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/One bottle down.jpg"
+                  alt=""
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">One Bottle Down</div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/millionaire.jpeg"
+                  alt=""
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">Millionaire</div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/superman.jpg"
+                  alt=""
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">Superman</div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/call aundi.jpg"
+                  alt=""
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">Call Aundi</div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="flex-shrink-0 w-40 group relative">
+                <img
+                  src="assets/Singer/Brown rang.jpg"
+                  alt=""
+                  class="rounded-xl w-40 h-40"
+                />
+                <!-- Play button (hidden by default, shown on hover) -->
+                <div
+                  class="absolute top-[70%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full h-11 w-11 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="text-zinc-400 font-bold">Brown Rang</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="text-white mt-10 mb-2" />
+        <!--About section-->
+        <div class="grid grid-cols-12 gap-4 p-5">
+          <!--Company-->
+          <div
+            class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-2"
+          >
+            <div class="text-white font-bold text-md mb-2">Company</div>
+            <div class="text-zinc-400">About</div>
+            <div class="text-zinc-400">Jobs</div>
+            <div class="text-zinc-400">For the record</div>
+          </div>
+          <!--Communities-->
+          <div
+            class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-2"
+          >
+            <div class="text-white font-bold text-md mb-2">Communities</div>
+            <div class="text-zinc-400">For artists</div>
+            <div class="text-zinc-400">Developers</div>
+            <div class="text-zinc-400">Advertising</div>
+            <div class="text-zinc-400">Investors</div>
+            <div class="text-zinc-400">Vendors</div>
+          </div>
+          <!--Useful links-->
+          <div
+            class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-2"
+          >
+            <div class="text-white font-bold text-md mb-2">Useful links</div>
+            <div class="text-zinc-400">Support</div>
+            <div class="text-zinc-400">Free mobile app</div>
+            <div class="text-zinc-400">Popular by country</div>
+            <div class="text-zinc-400">Import your music</div>
+          </div>
+          <!--Spotify plans-->
+          <div
+            class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-2"
+          >
+            <div class="text-white font-bold text-md mb-2">Spotify plans</div>
+            <div class="text-zinc-400">Premium individual</div>
+            <div class="text-zinc-400">Premium duo</div>
+            <div class="text-zinc-400">Premium family</div>
+            <div class="text-zinc-400">Premium student</div>
+            <div class="text-zinc-400">Spotify free</div>
+          </div>
+          <!--Logo-->
+          <div class="col-span-4 flex gap-4 justify-center pl-5">
+            <div>
+              <i class="fa-brands fa-square-instagram text-white text-3xl"></i>
+            </div>
+            <div><i class="fa-brands fa-twitter text-white text-3xl"></i></div>
+            <div><i class="fa-brands fa-facebook text-white text-3xl"></i></div>
+          </div>
+        </div>
+        <hr class="text-white" />
+      </div>
+
+      <!--Running Music Div-->
+      <div class=" overflow-x-auto hide-scrollbar h-[80vh] hidden md:block md:w-[21vw] w[0vw] bg-zinc-900 rounded-md ">
+        <div class="flex justify-between items-center p-3">
+          <div class="flex gap-2">
+            <div><i class="fa-solid fa-users-viewfinder text-white text-xl pt-1"></i></div>
+            <div class="text-white text-md font-bold">
+              Superman
+            </div>
+          </div>
+          <div>
+            <div class="flex gap-4 pr-7">
+            <div class="bg-zinc-800 rounded-full w-8 h-8 flex justify-center items-center">
+            <i class="fa-solid fa-ellipsis text-white"></i>
+            </div>
+            <div>
+              <i class="fa-solid fa-up-right-and-down-left-from-center text-white text-sm"></i>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div>
+          <img src="assets/Singer/superman.jpg" alt="" class="h-70 w-80 rounded-xl">
+        </div>
+        <div class="flex justify-between p-3 items-center">
+          <div>
+            <div class="text-white font-bold text-xl">Superman</div>
+            <div class="text-zinc-400 text-md">Yo Yo Honey Singh</div>
+          </div>
+          <div class="bg-green-500 rounded-full h-10 w-10 flex justify-center items-center">
+              <i class="fa-solid fa-check text-xl"></i>
+          </div>
+        </div>
+        <div>
+          <div class="pt-5">
+            <img src="assets/Singer/yo yo.jpg" alt="" class="h-70 w-80 rounded-xl ">
+             <div class="flex items-center text-white text-xl font-bold p-5 ">
+              About the artist
+            </div>
+            <div class="text-white pl-5">
+              Yo Yo Honey Singh is an indian music producer,composer,raper,pop singer,lyricist,trendsetter and filmactor.
+            </div>
+            <div>
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer Music play-->
+      <div class="flex items-center justify-between h-[10vh]">
+        <div class="flex gap-3 items-center">
+          <div class="pl-3"><img src="assets/Singer/superman.jpg" alt="" class="h-15 w-15 rounded-md hidden md:block"></div>
+          <div>
+          <div class="text-white font-bold">Superman</div>
+            <div class="text-zinc-400 text-sm">Yo Yo Honey Singh</div>
+          </div>
+          <div class="bg-green-500 rounded-full h-4 w-4 flex justify-center items-center">
+              <i class="fa-solid fa-check text-xs"></i>
+          </div>
+        </div>
+        <div class="hidden md:block">
+        <div class="flex gap-2 w-100 justify-center mb-2">
+          <div><i class="fa-solid fa-shuffle text-white"></i></div>
+          <div><i class="fa-solid fa-backward-step text-white"></i></div>
+          <div><i class="fa-solid fa-circle-play text-white text-2xl"></i></div>
+          <div><i class="fa-solid fa-forward-step text-white"></i></div>
+          <div><i class="fa-solid fa-repeat text-white"></i></div>
+        </div>
+        <div class="bg-white rounded-full h-1">
+        
+        </div>
+        </div>
+        <div class="flex gap-3 items-center pr-5">
+          <div><i class="fa-solid fa-circle-play text-white"></i></div>
+          <div><i class="fa-solid fa-microphone text-white"></i></div>
+          <div><i class="fa-solid fa-list text-white"></i></div>
+          <div><i class="fa-solid fa-mobile text-white"></i></div>
+          <div><i class="fa-solid fa-expand text-white"></i></div>
+        </div>
+      </div>
+  </body>
+</html>
