@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive</title>
+    <link rel="icon" href="//ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Navbar -->
+  <nav class="w-[100vw] bg-gray-50 shadow-md px-4 py-2 flex items-center justify-between h-[10vh]">
+    
+    <!-- Left: Logo + Name -->
+    <div class="flex items-center space-x-2">
+      <img src="assets/Drive logo.png" alt="logo" class="w-8 h-8 rounded">
+      <span class="text-xl">Drive</span>
+    </div>
+
+    <!-- Center: Search -->
+    <div class="flex-1 ml-40 hidden md:flex">
+      <div class="flex items-center w-[40vw] bg-gray-200 rounded-full px-3 py-2 h-12">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search in drive"
+          class="flex-1 px-2">
+        <i class="fa-solid fa-table-list"></i>
+      </div>
+    </div>
+
+    <!-- Right: Icons -->
+    <div class="flex items-center space-x-4">
+      <div><i class="fa-regular fa-circle-question"></i></div>
+      <div><i class="fa-solid fa-gear"></i></div>
+      <div><i class="fa-solid fa-grip"></i></div>
+      <div><i class="fa-solid fa-user"></i></div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="flex h-[90vh]">
+
+    <!-- Left Sidebar (17%) -->
+    <div class="w-[17%] shadow-md p-3 flex flex-col space-y-3 bg-gray-50 overflow-auto">
+      
+      <!-- 1st: New Button -->
+      <div class="flex items-center justify-center gap-2 bg-white text-black  rounded-md cursor-pointer shadow-md border p-4 hidden md:block hover:bg-gray-200">
+        <i class="fa-solid fa-plus"></i>
+        <span>New</span>
+      </div>
+
+      <!-- 2nd to 10th: Menu Items -->
+      <div class="flex items-center space-x-3 text-blue-700 md:bg-blue-100 cursor-pointer rounded-full pl-5 py-1">
+        <i class="fa-regular fa-house"></i>
+        <span class="hidden md:block">Home</span>
+      </div>
+      <div class="flex items-center space-x-3  cursor-pointer hover:bg-gray-200 rounded-full pl-5 ">
+        <i class="fa-regular fa-hard-drive"></i>
+        <span class="hidden md:block">My Drive</span>
+      </div>
+      <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-200 rounded-full pl-5 ">
+        <i class="fa-solid fa-computer"></i>
+        <span class="hidden md:block">Computer</span>
+      </div>
+      <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-200 rounded-full pl-5 ">
+        <i class="fa-solid fa-people-group"></i>
+        <span class="hidden md:block">Shared with me</span>
+      </div>
+      <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-200 rounded-full pl-5 ">
+        <i class="fa-regular fa-clock"></i>
+        <span class="hidden md:block">Recents</span>
+      </div>
+      <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-200 rounded-full pl-5 ">
+        <i class="fa-regular fa-star"></i>
+        <span class="hidden md:block">Starred</span>
+      </div>
+      <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-200 rounded-full pl-5 ">
+        <i class="fa-solid fa-ban"></i>
+        <span class="hidden md:block">Spam</span>
+      </div>
+      <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-200  rounded-full pl-5 ">
+        <i class="fa-solid fa-trash-can"></i>
+        <span class="hidden md:block">Trash</span>
+      </div>
+
+      <!-- 11th: Storage Used -->
+       <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-200 rounded-full pl-5">
+        <i class="fa-solid fa-cloud "></i>
+        <span class="hidden md:block">Storage</span>
+      </div>
+        <div class="w-40 bg-gray-200 rounded-full h-1 mb-2 ml-5 hidden md:block">
+          <div class="bg-blue-500 h-1 rounded-full w-22"></div>
+        </div>
+        <p class="text-sm pl-5 hidden md:block">8 GB of 15 GB used</p>
+      
+
+      <!-- 12th: Get More Storage -->
+       <div class="hidden md:block">
+      <button class="mt-2 ml-5 text-blue-700 text-sm font-semibold flex justify-center items-center h-9 w-38 rounded-full hover:bg-blue-200 border border-black border-solid cursor-pointer ">
+        Get More Storage
+      </button>
+      </div>
+    </div>
+
+    <!-- Center Content (78%) -->
+    <div class="w-[78%] p-6">
+
+      <!--Welcome to drive-->
+      <div class="flex justify-between h-[7vh]">
+        <div class="text-sm md:text-lg lg:text-xl">Welcome to Drive</div>
+        <div><i class="fa-solid fa-circle-info cursor-pointer"></i></div>
+      </div>
+
+      <!--Suggested folders-->
+      <div class="hover:bg-blue-200 hover:text-blue-600 rounded-full w-[15%] cursor-pointer truncate">
+        <i class="fa-solid fa-angle-down pl-3 py-2"></i> <span class="pl-2 ">Suggested folders</span>
+      </div>
+
+      <!--Two options-->
+      <div class="flex gap-5 h-[10vh] items-center">
+        <div class="bg-gray-100 w-[20vw] rounded-lg h-[7vh] hover:bg-gray-200 flex p-2 items-center justify-between">
+          <div class="flex gap-4 items-center">
+            <div>
+              <i class="fa-solid fa-folder text-[0px] md:text-lg"></i>
+            </div>
+           <div>
+            <div class="text-[5px] md:text-[10px] lg:text-[15px] font-semibold">Classroom</div>
+            <div class="text-[5px] md:text-[10px] lg:text-[15px] text-gray-700">In My Drive</div>
+          </div>  
+          </div>
+          <div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="bg-gray-100 w-[20vw] rounded-lg h-[7vh] hover:bg-gray-200 flex p-2 items-center justify-between">
+          <div class="flex gap-3 items-center">
+            <div>
+              <i class="fa-solid fa-folder text-[0px] md:text-lg"></i>
+            </div>
+           <div>
+            <div class="text-[5px] md:text-[10px] lg:text-[15px] font-semibold">GDL Cohort 1 and 2</div>
+            <div class="text-[5px] md:text-[10px] lg:text-[15px] text-gray-700">In Shared with me</div>
+          </div>  
+          </div>
+          <div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+      </div>
+
+      <!--Suggested files-->
+      <div class="hover:bg-blue-200 hover:text-blue-600 rounded-full w-[13%] cursor-pointer truncate">
+        <i class="fa-solid fa-angle-down pl-3 py-2"></i> <span class="pl-2">Suggested files</span>
+      </div>
+
+      <!--List-->
+     <div class="grid grid-cols-12 w-[75vw] h-[5vh]">
+      <div class="col-span-6">
+        <div class="p-2 font-semibold truncate">Name</div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-solid fa-note-sticky"></i> Tailwind notes</div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-solid fa-note-sticky"></i> HTML notes</div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-solid fa-note-sticky"></i> CSS notes</div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-solid fa-note-sticky"></i> Tailwind notes</div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-solid fa-note-sticky"></i> Javascript notes</div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-solid fa-note-sticky"></i> React notes</div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-solid fa-note-sticky"></i> Node.js notes</div>
+        <hr>
+      </div>
+      <div class="col-span-2">
+        <div class="p-2 truncate font-semibold">Reason suggested</div>
+        <hr>
+        <div class="text-gray-700 p-2 truncate hover:bg-gray-100">You opened.1 Sep 2025</div>
+        <hr>
+        <div class="text-gray-700 p-2 truncate hover:bg-gray-100">You opened.1 Sep 2025</div>
+        <hr>
+        <div class="text-gray-700 p-2 truncate hover:bg-gray-100">You opened.1 Sep 2025</div>
+        <hr>
+        <div class="text-gray-700 p-2 truncate hover:bg-gray-100">You opened.1 Sep 2025</div>
+        <hr>
+        <div class="text-gray-700 p-2 truncate hover:bg-gray-100">You opened.1 Sep 2025</div>
+        <hr>
+        <div class="text-gray-700 p-2 truncate hover:bg-gray-100">You opened.1 Sep 2025</div>
+        <hr>
+        <div class="text-gray-700 p-2 truncate hover:bg-gray-100">You opened.1 Sep 2025</div>
+        <hr>
+      </div>
+      <div class="col-span-2">
+        <div class="p-2 truncate font-semibold">Owner</div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-solid fa-user"></i><span class="text-gray-700"> me</span></div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-solid fa-user"></i><span class="text-gray-700"> me</span></div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-solid fa-user"></i><span class="text-gray-700"> me</span></div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-solid fa-user"></i><span class="text-gray-700"> me</span></div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-solid fa-user"></i><span class="text-gray-700"> me</span></div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-solid fa-user"></i><span class="text-gray-700"> me</span></div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-solid fa-user"></i><span class="text-gray-700"> me</span></div>
+        <hr>       
+      </div>
+      <div class="col-span-2">
+        <div class="p-2 truncate font-semibold">Location</div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-regular fa-hard-drive"></i><span class="text-gray-700"> My Drive</span></div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-regular fa-hard-drive"></i><span class="text-gray-700"> My Drive</span></div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-regular fa-hard-drive"></i><span class="text-gray-700"> My Drive</span></div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-regular fa-hard-drive"></i><span class="text-gray-700"> My Drive</span></div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-regular fa-hard-drive"></i><span class="text-gray-700"> My Drive</span></div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-regular fa-hard-drive"></i><span class="text-gray-700"> My Drive</span></div>
+        <hr>
+        <div class="p-2 truncate hover:bg-gray-100"><i class="fa-regular fa-hard-drive"></i><span class="text-gray-700"> My Drive</span></div>
+        <hr>
+      </div>
+     </div>
+      </div>
+
+      <!-- Right Icons Panel (5%) -->
+    <div class="w-[5%] bg-gray-50 shadow-md p-4 flex flex-col items-center space-y-4">
+      <div><i class="fa-solid fa-calendar-days"></i></div>
+      <div><i class="fa-solid fa-lightbulb"></i></div>
+      <div><i class="fa-solid fa-list-check"></i></div>
+      <div><i class="fa-regular fa-address-book"></i></div>
+    </div>
+  </div>
+
+</body>
+</html>
